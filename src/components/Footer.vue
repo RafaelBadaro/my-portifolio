@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #cbd3f2;
+  background-color: #f4e9c1;
   text-align: start;
 }
 .socials{

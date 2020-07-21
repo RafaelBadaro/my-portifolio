@@ -13,5 +13,6 @@ export default {
 
 <style scoped>
 .header {
+  background-color: #70a0af;
 }
 </style>

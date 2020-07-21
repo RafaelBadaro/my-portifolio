@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <h1>Um pouco sobre mim</h1>
     <AboutMe></AboutMe>
     <h1>Linguagens e tecnologias</h1>
@@ -22,4 +22,7 @@ export default {
 </script>
 
 <style scoped>
+.body{
+  background-color: #444b6e;
+}
 </style>
