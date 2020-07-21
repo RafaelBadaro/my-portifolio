@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <h1>Um pouco sobre mim</h1>
     <AboutMe></AboutMe>
     <h1>Linguagens e tecnologias</h1>
     <h1>Projetos</h1>
@@ -23,6 +22,5 @@ export default {
 
 <style scoped>
 .body{
-  background-color: #444b6e;
 }
 </style>
