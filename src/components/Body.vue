@@ -4,6 +4,7 @@
     <h1>Linguagens e tecnologias</h1>
     <h1>Projetos</h1>
     <Projects></Projects>
+    download curriculo
   </div>
 </template>
 
