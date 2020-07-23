@@ -31,7 +31,11 @@ export default {
   background-color: #444b6e;
   color: white;
   display: flex;
+  padding: 40px;
 }
+
+
+
 .infos {
   display: flex;
   flex-direction: column;
@@ -56,7 +60,23 @@ export default {
   padding: 10px 0;
 }
 
+.picture {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 img {
   border-radius: 50%;
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .aboutme {
+    display: block;
+  }
+  .infos__container{
+    padding: 0;
+  }
 }
 </style>
