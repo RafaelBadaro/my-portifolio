@@ -2,7 +2,7 @@
   <div class="body">
     <AboutMe></AboutMe>
     <Projects></Projects>
-    <a href="../assets/curriculo.pdf" download="curriculo_rafael_badaro.pdf" target="_blank">Baixar curriculo</a>
+    <a href="/curriculo.pdf" download>Baixar curriculo</a>
   </div>
 </template>
 
