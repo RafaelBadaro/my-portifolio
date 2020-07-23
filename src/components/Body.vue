@@ -1,10 +1,8 @@
 <template>
   <div class="body">
     <AboutMe></AboutMe>
-    <h1>Linguagens e tecnologias</h1>
-    <h1>Projetos</h1>
     <Projects></Projects>
-    download curriculo
+    <a href="../assets/curriculo.pdf" download="curriculo_rafael_badaro.pdf" target="_blank">Baixar curriculo</a>
   </div>
 </template>
 
@@ -14,13 +12,12 @@ import AboutMe from "../components/AboutMe.vue";
 
 export default {
   name: "Body",
-   components: {
+  components: {
     Projects,
-    AboutMe
-  }
+    AboutMe,
+  },
 };
 </script>
 
 <style scoped>
-
 </style>
