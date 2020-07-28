@@ -16,8 +16,8 @@ export default {
   components: {
     Header,
     Body,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 
@@ -28,8 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 </style>
