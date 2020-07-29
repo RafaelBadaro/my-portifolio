@@ -2,9 +2,6 @@
   <div class="body">
     <AboutMe></AboutMe>
     <Projects></Projects>
-    <button>
-      <a href="/curriculo.pdf" download>Baixar curriculo</a>
-    </button>
   </div>
 </template>
 

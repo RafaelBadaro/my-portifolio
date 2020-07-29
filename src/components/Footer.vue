@@ -14,12 +14,15 @@
         </a>
       </div>
     </div>
+    <a href="/curriculo.pdf" download>
+      <button>Baixar curriculo</button>
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
 };
 </script>
 
@@ -28,10 +31,10 @@ export default {
   background-color: #f4e9c1;
   text-align: start;
 }
-.socials{
+.socials {
   margin-left: 50px;
 }
-.socials-header{
+.socials-header {
   font-size: 22px;
 }
 .social-img {
