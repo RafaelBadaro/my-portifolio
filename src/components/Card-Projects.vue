@@ -1,10 +1,8 @@
 <template>
   <div class="project_card">
     <div class="card_title">{{title}}</div>
-    <div class="card_body">
-      <p>{{body}}</p>
-      <a :href="url">Repositório</a>
-    </div>
+    <div class="card_body" :data-hover="body">Passe o mouse aqui!</div>
+    <a class="repo_url" :href="url">Repositório</a>
   </div>
 </template>
 
@@ -26,7 +24,7 @@ export default {
   background-color: #fa824c;
   text-align: left;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   margin: 20px;
 }
 .card_title {
@@ -36,5 +34,19 @@ export default {
 .card_body {
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 7px;
+}
+.card_body:hover {
+  font-size: 0;
+  transition: 0.5s ease;
+}
+.card_body:hover::after {
+  content: attr(data-hover);
+  font-size: 17px;
+}
+
+.repo_url {
+  padding-left: 5px;
+  padding-bottom: 7px;
 }
 </style>

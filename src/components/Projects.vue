@@ -46,9 +46,9 @@ export default {
           url: "https://github.com/saldanhacl/sagrado-solucao",
         },
         {
-          title: "Fisioterapia - Respiração oral",
+          title: "Fisioterapia",
           body:
-            "Um site com um jogo de cunho informativo sobre Respiração oral. Este projeto foi realizado como um projeto de extensão em conjunto com a Fisioterapia da PUC Minas",
+            "Um site com um jogo de cunho informativo sobre Respiração oral. Este projeto foi realizado como um projeto de extensão em conjunto com a Fisioterapia da PUC Minas.",
           url: " https://github.com/gmfonseca/tis4",
         },
         {
@@ -70,6 +70,13 @@ export default {
 
 .projects_content {
   display: flex;
+}
+
+@media (max-width: 500px) {
+  .projects_content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .projects_title {
   text-align: left;
