@@ -1,7 +1,8 @@
 <template>
   <div class="project_card">
     <div class="card_title">{{title}}</div>
-    <div class="card_body" :data-hover="body">Passe o mouse aqui!</div>
+    <!-- <div class="card_body" :data-hover="body">Passe o mouse aqui!</div> -->
+    <div class="card_body">{{body}}</div>
     <a class="repo_url" :href="url">Repositório</a>
   </div>
 </template>
@@ -36,14 +37,14 @@ export default {
   padding-right: 10px;
   padding-top: 7px;
 }
-.card_body:hover {
+/* .card_body:hover {
   font-size: 0;
   transition: 0.5s ease;
 }
 .card_body:hover::after {
   content: attr(data-hover);
   font-size: 17px;
-}
+} */
 
 .repo_url {
   padding-left: 5px;
