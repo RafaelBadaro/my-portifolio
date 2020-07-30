@@ -4,7 +4,13 @@
       <h2 class="projects_title--text">Projetos</h2>
     </div>
     <div class="projects_content">
-      <CardProjects v-for="card in cards" :key="card.title" :title="card.title" :body="card.body" :url="card.url"></CardProjects>
+      <CardProjects
+        v-for="card in cards"
+        :key="card.title"
+        :title="card.title"
+        :body="card.body"
+        :url="card.url"
+      ></CardProjects>
     </div>
   </div>
 </template>
@@ -25,13 +31,31 @@ export default {
           title: "DogTour",
           body:
             "O DogTour é uma plataforma cujo objetivo é facilitar o agendamento de passeios com cães.",
-            url: "https://github.com/RafaelBadaro/dogtour",
+          url: "https://github.com/RafaelBadaro/dogtour",
         },
         {
           title: "Disfluência",
           body:
             "Uma plataforma online para auxiliar os profissionais na área da linguagem e comunicação.",
-            url: "https://github.com/LaercioNazareno/Disfluencia", 
+          url: "https://github.com/LaercioNazareno/Disfluencia",
+        },
+        {
+          title: "Sagrado",
+          body:
+            "Um software em windows forms para auxiliar na gestão de um restaurante.",
+          url: "https://github.com/saldanhacl/sagrado-solucao",
+        },
+        {
+          title: "Fisioterapia - Respiração oral",
+          body:
+            "Um site com um jogo de cunho informativo sobre Respiração oral. Este projeto foi realizado como um projeto de extensão em conjunto com a Fisioterapia da PUC Minas",
+          url: " https://github.com/gmfonseca/tis4",
+        },
+        {
+          title: "Guardian",
+          body:
+            "Um software para procura de estacionamentos com os melhores preços na sua região.",
+          url: "https://github.com/JonathasSL/guardian-api",
         },
       ],
     };
