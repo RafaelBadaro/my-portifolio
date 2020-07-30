@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="socials">
-      <span class="socials-header">You can find me at:</span>
+      <span class="socials-header">Redes sociais:</span>
       <div class="socials-links">
         <a class="social" id="instagram" href="https://www.instagram.com/rafabadaro/">
           <img class="social-img" src="../assets/insta.png" />
@@ -13,10 +13,10 @@
           <img class="social-img" src="../assets/github.png" />
         </a>
       </div>
+      <a href="/curriculo.pdf" download>
+        <button>Baixar curriculo</button>
+      </a>
     </div>
-    <a href="/curriculo.pdf" download>
-      <button>Baixar curriculo</button>
-    </a>
   </div>
 </template>
 
@@ -28,11 +28,14 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #f4e9c1;
+  background-color: #70a0af;
   text-align: start;
 }
 .socials {
-  margin-left: 50px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .socials-header {
   font-size: 22px;

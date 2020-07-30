@@ -1,29 +1,60 @@
 <template>
   <div class="projects">
     <div class="projects_title">
-      <h2>Projetos</h2>
+      <h2 class="projects_title--text">Projetos</h2>
     </div>
     <div class="projects_content">
-      <Card-Projects></Card-Projects>
+      <CardProjects v-for="card in cards" :key="card.title" :title="card.title" :body="card.body" :url="card.url"></CardProjects>
     </div>
   </div>
 </template>
 
 <script>
-import Card_Projects from "../components/Card-Projects.vue";
+import CardProjects from "../components/Card-Projects.vue";
 
 export default {
   name: "Projects",
-    components: {
-    Card_Projects
+  components: {
+    CardProjects,
+  },
+
+  data: function () {
+    return {
+      cards: [
+        {
+          title: "DogTour",
+          body:
+            "O DogTour é uma plataforma cujo objetivo é facilitar o agendamento de passeios com cães.",
+            url: "https://github.com/RafaelBadaro/dogtour",
+        },
+        {
+          title: "Disfluência",
+          body:
+            "Uma plataforma online para auxiliar os profissionais na área da linguagem e comunicação.",
+            url: "https://github.com/LaercioNazareno/Disfluencia", 
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style scoped>
-.projects_title {
-  text-align: left;
-  padding-left: 30px;
+.projects {
+  background-color: #f4e9c1;
 }
 
+.projects_content {
+  display: flex;
+}
+.projects_title {
+  text-align: left;
+  padding-left: 20px;
+}
+.projects_title--text {
+  margin: 0;
+  padding-top: 15px;
+}
 </style>
+
+ 
