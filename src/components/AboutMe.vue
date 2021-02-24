@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="picture">
-      <img src="../assets/eu.png" />
+      <img src="../assets/pp.jpg" />
     </div>
   </div>
 </template>

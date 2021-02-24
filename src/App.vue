@@ -32,4 +32,12 @@ export default {
   grid-template-rows: auto 1fr auto;
   height: 100%;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
 </style>

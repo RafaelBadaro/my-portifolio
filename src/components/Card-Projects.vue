@@ -1,13 +1,14 @@
 <template>
   <div class="project_card">
-    <div class="card_title">{{title}}</div>
+    <div class="card_title">{{ title }}</div>
     <!-- <div class="card_body" :data-hover="body">Passe o mouse aqui!</div> -->
-    <div class="card_body">{{body}}</div>
-    <a class="repo_url" :href="url">Repositório</a>
+    <div class="card_body">{{ body }}</div>
+    <a class="waves-effect waves-light btn repo_url" :href="url">Repositório</a>
   </div>
 </template>
 
 <script>
+import "materialize-css/dist/css/materialize.css";
 export default {
   name: "Card-Projects",
   props: {
@@ -21,7 +22,6 @@ export default {
 <style scoped>
 .project_card {
   width: 200px;
-  height: 250px;
   background-color: #fa824c;
   text-align: left;
   display: grid;
@@ -47,7 +47,6 @@ export default {
 } */
 
 .repo_url {
-  padding-left: 5px;
-  padding-bottom: 7px;
+  margin: 10px;
 }
 </style>

@@ -13,8 +13,8 @@
           <img class="social-img" src="../assets/github.png" />
         </a>
       </div>
-      <a href="/curriculo.pdf" download>
-        <button>Baixar curriculo</button>
+      <a class="waves-effect waves-light btn" href="/curriculo.pdf" download>
+        Baixar curriculo
       </a>
     </div>
   </div>
